@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+.fullpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.maincontainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px; 
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase; 
+}
+
+.subcontainer {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#caluclator td {
+    padding: 0;
+}
+
+#caluclator input[type="text"],
+#caluclator input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #f9f9f9; 
+}
+
+#caluclator input[type="text"]:focus {
+    outline: none;
+    border-color: #5cb85c; 
+}
+
+#caluclator input[type="button"] {
+    cursor: pointer;
+    background-color: #5cb85c;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#caluclator input[type="button"]:hover {
+    background-color: #4cae4c;
+}
+
+#caluclator input[type="button"][value="/"],
+#caluclator input[type="button"][value="*"],
+#caluclator input[type="button"][value="-"],
+#caluclator input[type="button"][value="+"] {
+    background-color: #f0ad4e;
+}
+
+#caluclator input[type="button"][value="/"]:hover,
+#caluclator input[type="button"][value="*"]:hover,
+#caluclator input[type="button"][value="-"]:hover,
+#caluclator input[type="button"][value="+"]:hover {
+    background-color: #eea236;
+}
+
+#caluclator input[type="button"][value="Clear"] {
+    background-color: #d9534f;
+}
+
+#caluclator input[type="button"][value="Clear"]:hover {
+    background-color: #c9302c;
+}
+
